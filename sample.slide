@@ -1,0 +1,52 @@
+Sample Presentation
+Based on https://godoc.org/golang.org/x/tools/present
+29 Aug 2018
+Tags: foo, bar, baz
+
+Mark Harrison
+Job title, Company
+marhar@gmail.com
+http://url/
+@marhar
+
+#-------------------------------------------------------------------------------
+* title
+** L2
+*** L3
+
+: presenter notes: run present -notes
+
+_italic_ *bold* `program` _Why_use_scoped__ptr_? Use plain ***ptr* instead.
+
+: presenter notes: and press N in browser to get notes
+
+links: [[http://127.0.0.1:3999/sample.slide#1][first page]] or [[http://127.0.0.1:3999/sample.slide#1]]
+.link http://127.0.0.1:3999/sample.slide first page
+
+  Preformatted text
+    is indented (however you like)
+
+#-------------------------------------------------------------------------------
+* Dots
+
+.image gopher.png
+.caption _Gopher_ by [[https://www.instagram.com/reneefrench/][Renée French]]
+
+  .iframe http://foo
+  .html file.html
+
+#-------------------------------------------------------------------------------
+* Background
+
+.background still-life.jpg
+
+#-------------------------------------------------------------------------------
+* Code
+.code hello.go /^func main/,/^}/
+.play hello.go /^func main/,/^}/
+.code -numbers hello.go /^func main/,/^}/
+
+#-------------------------------------------------------------------------------
+* Code
+.code hello2.go /START OMIT/,/END OMIT/
+.play -edit hello2.go
